@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 function Ambassadors(): JSX.Element {
-  const DOMAIN =
-    process.env.NODE_ENV === "production" ? "https://www.pieaisv.com" : "";
   return (
     <>
       <div className="text-center">
@@ -32,7 +30,7 @@ function Ambassadors(): JSX.Element {
               <Image
                 className="rounded-full"
                 alt="David Quintanilla | @dave_quinta"
-                src={DOMAIN + "/david.jpg"}
+                src="/david.jpg"
                 height="200px"
                 width="200px"
               />
@@ -98,7 +96,7 @@ function Ambassadors(): JSX.Element {
               <Image
                 className="rounded-full"
                 alt="Nelson Hernández | @nelsoncode_dev"
-                src={DOMAIN + "/nelson.jpg"}
+                src="/nelson.jpg"
                 height="200px"
                 width="200px"
               />
@@ -165,7 +163,7 @@ function Ambassadors(): JSX.Element {
               <Image
                 className="rounded-full"
                 alt="Napoleón Pérez | @napoperez1998"
-                src={DOMAIN + "/napoleon.jpg"}
+                src="/napoleon.jpg"
                 height="200px"
                 width="200px"
               />
@@ -232,7 +230,7 @@ function Ambassadors(): JSX.Element {
               <Image
                 className="rounded-full"
                 alt="Giancarlo Pablo | @gpablo06"
-                src={DOMAIN + "/pablo.png"}
+                src="/pablo.png"
                 height="200px"
                 width="200px"
               />
