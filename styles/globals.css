@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #180821;
+}
+
+.red-logo {
+  border: #b01850;
+  background: #b01850;
+}
+
+.logo-float {
+  animation: float 4s ease-in-out infinite both;
+}
+@keyframes float {
+  0% {
+    transform: translateY(5%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
+.bg-twitter {
+  border-color: #6366f1;
+  background: #6366f1;
+}
+
+/* SCROLL BODY */
+body {
+  overflow: scroll;
+  height: 100vh;
+  width: auto;
+  overflow-x: hidden;
+  transition: 1s;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+  background: rgb(222, 219, 219);
+}
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #fdb200;
+}
+
+@media (max-width: 640px) {
+  .nav-grid-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-grid-column {
+    grid-template-columns: 20% 20% 60%;
+  }
+}
+
+.logo-float {
+  animation: float 4s ease-in-out infinite both;
+}
+@keyframes float {
+  0% {
+    transform: translateY(5%);
+  }
+
+  50% {
+    transform: translateY(15%);
+  }
+
+  100% {
+    transform: translateY(5%);
+  }
+}
