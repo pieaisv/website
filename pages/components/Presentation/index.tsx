@@ -82,7 +82,7 @@ function Presentation(): JSX.Element {
       <div className="mt-20 m-3 logo-float">
         <div className="flex justify-center items-center">
           <Image
-            alt="Nelson Hernández | NelsonCode"
+            alt="Pie & AI logo | DeepLearning.AI"
             src="/Pie & AI logo.png"
             height="500px"
             width="500px"
