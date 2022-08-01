@@ -32,10 +32,6 @@ body {
     transform: translateY(5%);
   }
 }
-.bg-twitter {
-  border-color: #6366f1;
-  background: #6366f1;
-}
 
 /* SCROLL BODY */
 body {
@@ -66,19 +62,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.logo-float {
-  animation: float 4s ease-in-out infinite both;
+.module-border-wrap {
+  width: auto;
+  position: relative;
+  background: linear-gradient(to right, #feb200, #f12064);
+  padding: 4px;
 }
-@keyframes float {
-  0% {
-    transform: translateY(5%);
-  }
 
-  50% {
-    transform: translateY(15%);
-  }
-
-  100% {
-    transform: translateY(5%);
-  }
+.module {
+  background: rgb(255, 255, 255);
+  padding: 2rem;
 }
