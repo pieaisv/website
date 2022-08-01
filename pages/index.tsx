@@ -19,7 +19,7 @@ const Home: NextPage = (props) => {
         <meta name="theme-color" content="#8609C9" />
         <link
           rel="icon"
-          href={DOMAIN + "/Pie%20&%20AI%20logo.png"}
+          href={DOMAIN + "/Pie & AI logo.png"}
           type="image/png"
         />
 
@@ -27,20 +27,14 @@ const Home: NextPage = (props) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta
-          property="og:image"
-          content={DOMAIN + "/Pie%20&%20AI%20logo.png"}
-        />
+        <meta property="og:image" content={"/Pie & AI logo.png"} />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@pieaisv" />
         <meta name="twitter:creator" content="@pieaisv" />
         <meta name="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta
-          name="twitter:image"
-          content={DOMAIN + "/Pie%20&%20AI%20logo.png"}
-        />
+        <meta name="twitter:image" content={"/Pie & AI logo.png"} />
       </Head>
       <Presentation />
       <br />
