@@ -70,7 +70,6 @@ function Ambassadors(): JSX.Element {
                       src={ambassador.image}
                       height="200px"
                       width="200px"
-                      layout="responsive"
                     />
                   </div>
                   <div className="text-center">
