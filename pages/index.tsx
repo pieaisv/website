@@ -13,7 +13,7 @@ const Home: NextPage = (props) => {
         <title>Pie & AI San Salvador</title>
         <meta
           name="description"
-          content="Customize your README.md file with ready-to-use sections in a simple way with the web editor"
+          content="AI meetings hosted independently by DeepLearning.AI Event Ambassadors"
         />
         <meta name="theme-color" content="#8609C9" />
         <link
