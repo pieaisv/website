@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
+import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import Ambassadors from "./components/Ambassadors";
 import Faq from "./components/Faq";
 import Presentation from "./components/Presentation";
 
-const Home: NextPage = () => {
-  const DOMAIN =
-    process.env.NODE_ENV === "production" ? "https://www.pieaisv.com" : "";
+const Home: NextPage = (props) => {
+  // @ts-ignore
+  const DOMAIN = process.env.NODE_ENV === "production" ? props?.host : "";
   return (
     <>
       <Head>
@@ -58,4 +58,13 @@ const Home: NextPage = () => {
   );
 };
 
+export async function getServerSideProps({ req }: NextPageContext) {
+  if (req) {
+    let host = req.headers.host;
+
+    return {
+      props: { host },
+    };
+  }
+}
 export default Home;
