@@ -5,8 +5,9 @@ import Faq from "./components/Faq";
 import Presentation from "./components/Presentation";
 
 const Home: NextPage = (props) => {
-  // @ts-ignore
-  const DOMAIN = process.env.NODE_ENV === "production" ? props?.host : "";
+  const DOMAIN =
+    // @ts-ignore
+    process.env.NODE_ENV === "production" ? "https://" + props?.host : "";
   const title = "Pie & AI: San Salvador";
   const description =
     "AI meetings hosted independently by DeepLearning.AI Event Ambassadors";

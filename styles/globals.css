@@ -69,6 +69,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .module {
+  height: 100%;
   background: rgb(255, 255, 255);
   padding: 2rem;
 }
