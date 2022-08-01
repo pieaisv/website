@@ -61,10 +61,7 @@ function Ambassadors(): JSX.Element {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 m-3">
           {ambassadors.map((ambassador) => {
             return (
-              <div
-                className="module-border-wrap"
-                key={ambassador.name}
-              >
+              <div className="module-border-wrap" key={ambassador.name}>
                 <div className=" shadow-md module">
                   <div className="text-center">
                     <Image
@@ -91,6 +88,7 @@ function Ambassadors(): JSX.Element {
                         target={"_blank"}
                         href={ambassador.github_url}
                         rel="noreferrer"
+                        aria-label="Link to GitHub"
                       >
                         <svg
                           width="24px"
@@ -113,8 +111,9 @@ function Ambassadors(): JSX.Element {
                     <div>
                       <a
                         target={"_blank"}
-                        href={ambassador.username_twitter}
+                        href={ambassador.twitter_url}
                         rel="noreferrer"
+                        aria-label="Link to Twitter"
                       >
                         <svg
                           width="24px"
