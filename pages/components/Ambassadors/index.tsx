@@ -86,7 +86,7 @@ function Ambassadors(): JSX.Element {
                   </div>
                   <br />
                   <div className="flex justify-center gap-2">
-                    <div>
+                    <figure>
                       <a
                         target={"_blank"}
                         href={ambassador.github_url}
@@ -109,7 +109,7 @@ function Ambassadors(): JSX.Element {
                           </g>
                         </svg>
                       </a>
-                    </div>
+                    </figure>
                     <div>
                       <a
                         target={"_blank"}
