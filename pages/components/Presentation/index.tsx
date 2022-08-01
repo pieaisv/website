@@ -86,6 +86,7 @@ function Presentation(): JSX.Element {
             src="/Pie & AI logo.png"
             height="500px"
             width="500px"
+            priority={true}
           />
         </div>
       </div>
