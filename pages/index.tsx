@@ -16,21 +16,19 @@ const Home: NextPage = (props) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="theme-color" content="#8609C9" />
+        <meta name="theme-color" content="#F12066" />
         <link rel="icon" href="/Pie & AI logo.png" type="image/png" />
-
         <meta property="og:url" content={DOMAIN} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="/Pie & AI logo.png" />
-
+        <meta property="og:image" content="/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@pieaisv" />
         <meta name="twitter:creator" content="@pieaisv" />
         <meta name="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta name="twitter:image" content="/Pie & AI logo.png" />
+        <meta property="og:image" content="/preview.png" />
       </Head>
       <Presentation />
       <br />
