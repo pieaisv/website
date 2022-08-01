@@ -9,7 +9,7 @@ function Faq() {
       <br />
       <div className="text-center">
         <div className="text-2xl md:text-4xl font-extrabold">
-          <span>Frequent questions</span>
+          <span>FAQ</span>
         </div>
       </div>
       <br />
