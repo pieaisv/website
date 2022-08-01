@@ -90,6 +90,8 @@ function Ambassadors(): JSX.Element {
                         rel="noreferrer"
                         aria-label="Link to GitHub"
                       >
+                        <title>GitHub</title>
+
                         <svg
                           width="24px"
                           height="24px"
@@ -115,6 +117,7 @@ function Ambassadors(): JSX.Element {
                         rel="noreferrer"
                         aria-label="Link to Twitter"
                       >
+                        <title>Twitter</title>
                         <svg
                           width="24px"
                           height="24px"
