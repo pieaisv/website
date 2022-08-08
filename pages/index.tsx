@@ -3,6 +3,7 @@ import Head from "next/head";
 import Ambassadors from "./components/Ambassadors";
 import Faq from "./components/Faq";
 import Presentation from "./components/Presentation";
+import Sponsors from "./components/Sponsors";
 
 const Home: NextPage = (props) => {
   const DOMAIN =
@@ -31,6 +32,11 @@ const Home: NextPage = (props) => {
         <meta property="og:image" content="/preview.png" />
       </Head>
       <Presentation />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Sponsors />
       <br />
       <br />
       <br />

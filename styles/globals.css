@@ -15,6 +15,10 @@ body {
   background: #b01850;
 }
 
+.bg-pie:hover {
+  background: #DD9201;
+}
+
 .logo-float {
   animation: float 4s ease-in-out infinite both;
 }
