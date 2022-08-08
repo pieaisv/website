@@ -1,4 +1,4 @@
-export const sponsors = [
+export const sponsorsBrands = [
   {
     name: "DeepLearning.AI",
     website: "https://www.deeplearning.ai/",

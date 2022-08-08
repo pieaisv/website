@@ -1,5 +1,5 @@
 import React from "react";
-import { sponsors } from "./sponsors";
+import { sponsorsBrands } from "./sponsors";
 
 function Sponsors() {
   return (
@@ -35,7 +35,7 @@ function Sponsors() {
           </div>
         </div>
         <div className="grid grid-cols-3 mt-8 md:mt-0">
-          {sponsors.map((brand) => {
+          {sponsorsBrands.map((brand) => {
             return (
               <a
                 key={brand.name}
