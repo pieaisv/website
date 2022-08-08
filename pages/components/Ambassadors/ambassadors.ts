@@ -18,7 +18,7 @@ export const ambassadorsProfiles = [
   {
     name: "Napoleón Pérez",
     username_twitter: "@napoperez1998",
-    description: "ML Engineer | Researcher @ieeetems",
+    description: `ML Engineer | Researcher  <a class="text-indigo-700 underline cursor-pointer" href="https://twitter.com/ieeetems">@ieeetems</a> `,
     github_url: "https://github.com/napo178",
     twitter_url: "https://twitter.com/napoperez1998",
     image: "/napoleon.jpg ",
