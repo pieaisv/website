@@ -31,7 +31,7 @@ function Sponsors() {
             <div className="text-base text-center md:text-left">
               <a
                 target={"_blank"}
-                href="mailto:pieaisv@gmail.com?subject=Event%20Sponsorship&amp;body=Hello 👋, I want to sponsor a Pie & AI event."
+                href="mailto:pieaisv@gmail.com?subject=Event%20Sponsorship&amp;body=Hello 👋, I want to sponsor a event."
                 className="bg-white bg-pie text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out"
                 rel="noreferrer"
               >
