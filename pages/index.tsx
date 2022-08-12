@@ -64,7 +64,9 @@ export async function getServerSideProps({ req }: NextPageContext) {
         : "http://" + req.headers.host;
 
     // Fetch data from external API
-    const data = await (await axios("http://localhost:3000" + "/api/event/get")).data;
+    const data = await (
+      await axios(host + "/api/event/get")
+    ).data;
 
     return {
       props: { host, data },
