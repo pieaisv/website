@@ -2,7 +2,18 @@ import { useState } from "react";
 import "@uiw/react-markdown-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
 import dynamic from "next/dynamic";
-import { EventType } from "./types";
+
+type EventType = {
+  id: string;
+  title: string;
+  date: string;
+  duration: {
+    start: string;
+    end: string;
+  };
+  info: string;
+  location: string;
+};
 
 const MarkdownEditor = dynamic(() => import("@uiw/react-markdown-editor"), {
   ssr: false,
@@ -13,7 +24,7 @@ function FormEvent() {
     "### Acerca del evento\n\nEn este evento aprenderas a como crear APIs con Azure Cognite Services, para ello utilizaremos Python\n\n### Speakers:\n- Nelson Hernandez\n\n### Recuerda seguirnos en nuestras redes sociales:\n- [Youtube](https://www.youtube.com/channel/UCWOp60M2GAAyuGsv0RoqC4g)\n- [GitHub](https://github.com/pieaisv)\n- [Twitter](https://twitter.com/pieaisv)";
 
   const [EventData, setEventData] = useState<EventType>({
-    id: crypto.randomUUID(),
+    id: "",
     title: "Forecasting con Deep Learning",
     date: "",
     duration: {
@@ -56,24 +67,24 @@ function FormEvent() {
       .catch((err) => console.log(err));
   };
 
-  const [Password, setPassword] = useState("");
+  // const [Password, setPassword] = useState("");
 
-  if (Password === "") {
-    let showMessageError = false;
-    const passwordWrited = window.prompt("Hacker Password");
+  // if (Password === "") {
+  //   let showMessageError = false;
+  //   const passwordWrited = window.prompt("Hacker Password");
 
-    if (passwordWrited === "pieai_") {
-      setPassword(passwordWrited);
-    } else {
-      showMessageError = true;
-    }
-    return (
-      <h1 className="text-center text-2xl h-screen grid place-content-center">
-        {/* eslint-disable-next-line react/no-unescaped-entities */}
-        you don't have access
-      </h1>
-    );
-  }
+  //   if (passwordWrited === "pieai_") {
+  //     setPassword(passwordWrited);
+  //   } else {
+  //     showMessageError = true;
+  //   }
+  //   return (
+  //     <h1 className="text-center text-2xl h-screen grid place-content-center">
+  //       {/* eslint-disable-next-line react/no-unescaped-entities */}
+  //       you don't have access
+  //     </h1>
+  //   );
+  // }
 
   return (
     <>

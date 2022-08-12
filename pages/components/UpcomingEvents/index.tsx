@@ -1,13 +1,25 @@
-import { useState } from "react";
-import { EventType } from "../FormEvent/types";
+import { useEffect, useState } from "react";
 
-interface UpcomingEventsType {
+type EventType = {
+  id: string;
+  title: string;
+  date: string;
+  duration: {
+    start: string;
+    end: string;
+  };
+  info: string;
+  location: string;
+};
+
+type UpcomingEventsProps = {
   data: {
     events: Array<EventType>;
   };
-}
+};
 
-function UpcomingEvents({ data }: UpcomingEventsType) {
+function UpcomingEvents({ data }: UpcomingEventsProps) {
+  const [Data, setData] = useState<Array<EventType>>([]);
   const [months] = useState([
     "January",
     "February",
@@ -23,6 +35,11 @@ function UpcomingEvents({ data }: UpcomingEventsType) {
     "December",
   ]);
 
+  useEffect(() => {
+    //@ts-ignore
+    setData(data.events);
+  }, [data]);
+
   return (
     <>
       <div className="text-2xl md:text-4xl font-extrabold text-center">
@@ -36,7 +53,7 @@ function UpcomingEvents({ data }: UpcomingEventsType) {
           <div className="snap-center shrink-0">
             <div className="shrink-0 w-4 sm:w-48" />
           </div>
-          {data.events.map((event) => {
+          {Data.map((event) => {
             return (
               <div
                 key={event.id}
