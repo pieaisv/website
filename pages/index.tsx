@@ -4,11 +4,12 @@ import Ambassadors from "./components/Ambassadors";
 import Faq from "./components/Faq";
 import Presentation from "./components/Presentation";
 import Sponsors from "./components/Sponsors";
+import UpcomingEvents from "./components/UpcomingEvents";
 
 const Home: NextPage = (props) => {
-  const DOMAIN =
-    // @ts-ignore
-    process.env.NODE_ENV === "production" ? "https://" + props?.host : "";
+  // @ts-ignore
+  const DOMAIN = props?.host;
+
   const title = "Pie & AI: San Salvador";
   const description =
     "AI meetings hosted independently by DeepLearning.AI Event Ambassadors";
@@ -17,7 +18,7 @@ const Home: NextPage = (props) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="theme-color" content="#F12066" />
+        <meta name="theme-color" content="#FFB100" />
         <link rel="icon" href="/Pie & AI logo.png" type="image/png" />
         <meta property="og:url" content={DOMAIN} />
         <meta property="og:type" content="website" />
@@ -36,6 +37,12 @@ const Home: NextPage = (props) => {
       <br />
       <br />
       <br />
+      {/* @ts-ignore */}
+      <UpcomingEvents data={props.data} />
+      <br />
+      <br />
+      <br />
+      <br />
       <Sponsors />
       <br />
       <br />
@@ -49,10 +56,19 @@ const Home: NextPage = (props) => {
 
 export async function getServerSideProps({ req }: NextPageContext) {
   if (req) {
-    let host = req.headers.host;
+    const { NODE_ENV } = process.env;
+    const host =
+      NODE_ENV === "production"
+        ? // @ts-ignore
+          "https://" + req.headers.host
+        : "http://" + req.headers.host;
+
+    // Fetch data from external API
+    const response = await fetch("http://localhost:3000" + "/api/event/get");
+    const data = await response.json();
 
     return {
-      props: { host },
+      props: { host, data },
     };
   }
 }

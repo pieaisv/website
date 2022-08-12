@@ -49,7 +49,10 @@ function Sponsors() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <div dangerouslySetInnerHTML={{ __html: brand.logo }} />
+                <div
+                  title={brand.name}
+                  dangerouslySetInnerHTML={{ __html: brand.logo }}
+                />
               </a>
             );
           })}
