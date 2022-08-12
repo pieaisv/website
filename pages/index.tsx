@@ -58,8 +58,7 @@ export async function getServerSideProps({ req }: NextPageContext) {
     const { NODE_ENV } = process.env;
     const host =
       NODE_ENV === "production"
-        ? // @ts-ignore
-          "https://" + req.headers.host
+        ? "https://" + req.headers.host
         : "http://" + req.headers.host;
 
     // Fetch data from external API

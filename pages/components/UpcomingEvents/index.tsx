@@ -36,8 +36,10 @@ function UpcomingEvents({ data }: UpcomingEventsProps) {
   ]);
 
   useEffect(() => {
-    //@ts-ignore
-    setData(data.events);
+    if (data.events) {
+      
+      setData(data.events);
+    }
   }, [data]);
 
   return (
