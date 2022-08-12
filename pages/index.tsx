@@ -5,6 +5,7 @@ import Faq from "./components/Faq";
 import Presentation from "./components/Presentation";
 import Sponsors from "./components/Sponsors";
 import UpcomingEvents from "./components/UpcomingEvents";
+import axios from "axios";
 
 const Home: NextPage = (props) => {
   // @ts-ignore
@@ -62,8 +63,11 @@ export async function getServerSideProps({ req }: NextPageContext) {
           "https://" + req.headers.host
         : "http://" + req.headers.host;
 
+    // Fetch data from external API
+    const data = await (await axios("http://localhost:3000" + "/api/event/get")).data;
+
     return {
-      props: { host, data: { events: [] } },
+      props: { host, data },
     };
   }
 }
