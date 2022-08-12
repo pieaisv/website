@@ -26,11 +26,10 @@ const Home: NextPage = (props) => {
         <meta property="og:description" content={description} />
         <meta property="og:image" content="/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@pieaisv" />
+        <meta name="twitter:site" content={DOMAIN} />
         <meta name="twitter:creator" content="@pieaisv" />
         <meta name="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <meta property="og:image" content="/preview.png" />
       </Head>
       <Presentation />
       <br />
