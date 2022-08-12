@@ -62,12 +62,8 @@ export async function getServerSideProps({ req }: NextPageContext) {
           "https://" + req.headers.host
         : "http://" + req.headers.host;
 
-    // Fetch data from external API
-    const response = await fetch("http://localhost:3000" + "/api/event/get");
-    const data = await response.json();
-
     return {
-      props: { host, data },
+      props: { host, data: { events: [] } },
     };
   }
 }
