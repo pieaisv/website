@@ -16,7 +16,7 @@ body {
 }
 
 .bg-pie:hover {
-  background: #FFB100;
+  background: #ffb100;
 }
 
 .logo-float {
@@ -76,4 +76,26 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   background: rgb(255, 255, 255);
   padding: 2rem;
+}
+
+.grid-newsletter {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media (min-width: 768px) {
+  .grid-newsletter {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+}
+
+.from-redpie-500 {
+  --tw-gradient-from: #b01850;
+  --tw-gradient-to: rgb(236 72 153 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-pie-500 {
+  --tw-gradient-to: #ffb100;
 }

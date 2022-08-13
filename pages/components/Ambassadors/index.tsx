@@ -62,7 +62,7 @@ function Ambassadors(): JSX.Element {
           {ambassadorsProfiles.map((ambassador) => {
             return (
               <div className="module-border-wrap" key={ambassador.name}>
-                <div className="shadow-md module">
+                <div className=" module">
                   <div className="text-center">
                     <Image
                       className="rounded-full"

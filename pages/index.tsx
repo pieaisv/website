@@ -2,6 +2,7 @@ import type { NextPage, NextPageContext } from "next";
 import Head from "next/head";
 import Ambassadors from "./components/Ambassadors";
 import Faq from "./components/Faq";
+import Newsletter from "./components/Newsletter";
 import Presentation from "./components/Presentation";
 import Sponsors from "./components/Sponsors";
 import UpcomingEvents from "./components/UpcomingEvents";
@@ -49,6 +50,10 @@ const Home: NextPage = (props) => {
       <br />
       <Ambassadors />
       <Faq />
+      <br />
+      <Newsletter />
+      <br />
+      <br />
     </>
   );
 };
