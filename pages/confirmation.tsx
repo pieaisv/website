@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PieAiLogo from "./components/Icons/PieAiLogo";
+import PieAiLogo from "../components/Icons/PieAiLogo";
 
 function Confirmation() {
   return (
