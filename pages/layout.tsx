@@ -10,7 +10,7 @@ export default function Layout({ children }: Props) {
       <Navbar />
       <main>{children}</main>
       <footer className="text-base text-center">
-        Created with 🤎 by Pie & AI San Salvador
+        Created with 🤎 by Pie & AI San Salvador.
       </footer>
       <br />
     </>

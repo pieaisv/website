@@ -53,7 +53,7 @@ function Ambassadors(): JSX.Element {
         <div className="max-w-screen-md m-auto">
           <p className="text-base">
             Speakers who are passionate about technology and are from another
-            galaxy
+            galaxy.
           </p>
         </div>
       </div>
@@ -64,14 +64,16 @@ function Ambassadors(): JSX.Element {
               <div className="module-border-wrap" key={ambassador.name}>
                 <div className=" module">
                   <div className="text-center">
-                    <Image
-                      className="rounded-full"
-                      title={`${ambassador.name} | ${ambassador.username_twitter}`}
-                      alt={`${ambassador.name} | ${ambassador.username_twitter}`}
-                      src={ambassador.image}
-                      height="200px"
-                      width="200px"
-                    />
+                    <picture>
+                      <Image
+                        className="rounded-full"
+                        title={`${ambassador.name} | ${ambassador.username_twitter}`}
+                        alt={`${ambassador.name} | ${ambassador.username_twitter}`}
+                        src={ambassador.image}
+                        height="200px"
+                        width="200px"
+                      />
+                    </picture>
                   </div>
                   <div className="text-center">
                     <strong>{ambassador.name}</strong>
