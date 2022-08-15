@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@uiw/react-markdown-editor": "^5.0.1",
-    "next": "12.2.4",
+    "next": "12.2.5",
     "next-remove-imports": "^1.0.6",
     "octokit": "^2.0.5",
     "react": "18.2.0",
