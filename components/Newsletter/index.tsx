@@ -36,12 +36,11 @@ function Newsletter() {
                 </div>
                 <div className="flex justify-center items-center">
                   <button
+                    id="button-submit-newsletter"
                     type={"submit"}
-                    className="text-xl md:text-2xl font-extrabold"
+                    className="text-xl md:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-redpie-500 to-pie-500"
                   >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-redpie-500 to-pie-500">
-                      Subscribe
-                    </span>
+                    Subscribe
                   </button>
                   <div className="hidden md:block">
                     <svg
