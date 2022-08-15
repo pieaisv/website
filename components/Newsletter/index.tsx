@@ -1,6 +1,12 @@
-import React from "react";
+import { FormEvent } from "react";
 
 function Newsletter() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    // 👇️ prevent page refresh
+    event.preventDefault();
+
+    console.log("form submitted ✅");
+  };
   return (
     <div className="m-3 md:m-auto max-w-screen-xl">
       <div className="module-border-wrap">
@@ -15,7 +21,7 @@ function Newsletter() {
                 & AI San Salvador.
               </p>
             </div>
-            <form method="post">
+            <form method="post" onSubmit={handleSubmit}>
               <div className="grid-newsletter bg-white drop-shadow h-16 md:h-20 mt-4">
                 <div className="flex justify-center items-center">
                   <input
@@ -24,16 +30,14 @@ function Newsletter() {
                     placeholder="Your email address"
                     name="email"
                     type={"email"}
+                    required
+                    pattern=".+@*\.com"
                   />
                 </div>
                 <div className="flex justify-center items-center">
                   <button
                     type={"submit"}
                     className="text-xl md:text-2xl font-extrabold"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      console.log("Hola");
-                    }}
                   >
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-redpie-500 to-pie-500">
                       Subscribe
