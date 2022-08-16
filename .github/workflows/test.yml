@@ -22,6 +22,8 @@ jobs:
       - name: Bundle for production
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          GH_GIST_ID: ${{ secrets.GH_GIST_ID }}
+          GH_TOKEN_GIST: ${{ secrets.GH_TOKEN_GIST }}
         run: npm run build
       - name: Executing Cypress
         run: npm run e2e
