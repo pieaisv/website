@@ -14,6 +14,7 @@ function Newsletter() {
     console.log(process.env.NEXT_PUBLIC_EMAIL_AUTHORIZATION);
 
     const { data, request } = await axios.post("/api/email/suscribe", Email);
+    console.log(data)
     if (request.status === 200 && data.message === "success") {
       push("/confirmation");
     }
