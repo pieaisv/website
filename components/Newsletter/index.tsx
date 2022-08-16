@@ -1,11 +1,22 @@
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
+import axios from "axios";
+import { useRouter } from "next/router";
 
 function Newsletter() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const [Email, setEmail] = useState({
+    email: "",
+  });
+
+  const { push } = useRouter();
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     // 👇️ prevent page refresh
     event.preventDefault();
+    console.log(process.env.NEXT_PUBLIC_EMAIL_AUTHORIZATION);
 
-    console.log("form submitted ✅");
+    const { data, request } = await axios.post("/api/email/suscribe", Email);
+    if (request.status === 200 && data.message === "success") {
+      push("/confirmation");
+    }
   };
   return (
     <div className="m-3 md:m-auto max-w-screen-xl">
@@ -32,6 +43,11 @@ function Newsletter() {
                     type={"email"}
                     required
                     pattern=".+@*\.com"
+                    onChange={({ target }) =>
+                      setEmail({
+                        email: target.value,
+                      })
+                    }
                   />
                 </div>
                 <div className="flex justify-center items-center">

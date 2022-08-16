@@ -14,6 +14,7 @@ const Home: NextPage = (props) => {
   const title = "Pie & AI: San Salvador";
   const description =
     "AI meetings hosted independently by DeepLearning.AI Event Ambassadors";
+
   return (
     <>
       <Head>
@@ -37,8 +38,7 @@ const Home: NextPage = (props) => {
       <br />
       <br />
       <br />
-      {/* @ts-ignore */}
-      <UpcomingEvents data={props.data} />
+      <UpcomingEvents />
       <br />
       <br />
       <br />
@@ -66,12 +66,8 @@ export async function getServerSideProps({ req }: NextPageContext) {
         ? "https://" + req.headers.host
         : "http://" + req.headers.host;
 
-    // Fetch data from external API
-    const response = await fetch(host + "/api/event/get");
-    const data = await response.json();
-
     return {
-      props: { host, data },
+      props: { host },
     };
   }
 }

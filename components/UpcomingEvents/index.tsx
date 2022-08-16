@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 type EventType = {
   id: string;
@@ -11,14 +12,7 @@ type EventType = {
   info: string;
   location: string;
 };
-
-type UpcomingEventsProps = {
-  data: {
-    events: Array<EventType>;
-  };
-};
-
-function UpcomingEvents({ data }: UpcomingEventsProps) {
+function UpcomingEvents() {
   const [Data, setData] = useState<Array<EventType>>([]);
   const [months] = useState([
     "January",
@@ -36,11 +30,14 @@ function UpcomingEvents({ data }: UpcomingEventsProps) {
   ]);
 
   useEffect(() => {
-    if (data.events) {
-      
-      setData(data.events);
-    }
-  }, [data]);
+    const getData = async () => {
+      const { data } = await axios.get("/api/event/get");
+      if (data.events) {
+        setData(data.events);
+      }
+    };
+    getData();
+  }, []);
 
   return (
     <>
