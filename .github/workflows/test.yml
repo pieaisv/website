@@ -23,9 +23,5 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npm run build
-      - uses: actions/upload-artifact@v3
-        with:
-          name: my-artifact
-          path: cypress/videos
       - name: Executing Cypress
         run: npm run e2e
