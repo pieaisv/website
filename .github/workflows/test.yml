@@ -42,7 +42,7 @@ jobs:
           --health-retries 5
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
@@ -50,6 +50,8 @@ jobs:
         uses: actions/setup-node@v3
       - name: Installing Dependencies
         run: npm i
+      - name: Run migrations
+        run: npx prisma migrate deploy
       - name: Bundle for production
         env:
           DATABASE_URL: postgres://postgres:mypassword@postgres:5432/emails
