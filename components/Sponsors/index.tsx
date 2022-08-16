@@ -24,7 +24,7 @@ function Sponsors() {
             <p className="text-base">
               Thank you for your support, without you it would not be possible.
               In addition we can reach more people, make raffles and improve the
-              quality of the events
+              quality of the events.
             </p>
           </div>
           <div className="flex justify-center">

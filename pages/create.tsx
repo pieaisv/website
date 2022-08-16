@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-const FormEvent = dynamic(() => import("./components/FormEvent"), {
+const FormEvent = dynamic(() => import("../components/FormEvent"), {
   ssr: false,
 });
 

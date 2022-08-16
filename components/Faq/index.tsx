@@ -8,7 +8,7 @@ function Faq() {
       <br />
       <br />
       <div className="text-center">
-        <div className="text-2xl md:text-4xl font-extrabold">
+        <div id="faq" className="text-2xl md:text-4xl font-extrabold">
           <span>FAQ</span>
         </div>
       </div>
@@ -17,20 +17,32 @@ function Faq() {
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           <div className="w-full lg:w-1/2 px-4 py-2">
             <details className="mb-4">
-              <summary className="font-semibold cursor-pointer  bg-gray-200 rounded-md py-2 px-4">
+              <summary className="font-semibold cursor-pointer  bg-gray-200 rounded-md py-2 px-4 mb-3">
                 What is a Pie & AI?
               </summary>
               <span className="text-base">
-                Pie & AI is a series from DeepLearning. AI meetings hosted
-                independently by the global AI community. Events typically
-                include conversations with world leaders, thought-provoking
-                discussions, networking opportunities with your fellow learners,
-                hands-on project practice, and cakes (or other desserts of your
-                choice).
+                Pie & AI is a series from{" "}
+                <a
+                  href="https://www.deeplearning.ai/ambassador/"
+                  className="text-indigo-700 underline cursor-pointer"
+                >
+                  DeepLearning.AI
+                </a>
+                . AI meetings hosted independently by the{" "}
+                <a
+                  href="https://www.deeplearning.ai/events/"
+                  className="text-indigo-700 underline cursor-pointer"
+                >
+                  global AI community
+                </a>
+                . Events typically include conversations with world leaders,
+                thought-provoking discussions, networking opportunities with
+                your fellow learners, hands-on project practice, and cakes (or
+                other desserts of your choice).
               </span>
             </details>
             <details className="mb-4">
-              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4">
+              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4 mb-3">
                 How can I be an ambassador?
               </summary>
               <span className="text-base">
@@ -47,19 +59,19 @@ function Faq() {
           </div>
           <div className="w-full lg:w-1/2 px-4 py-2">
             <details className="mb-4">
-              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4">
+              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4 mb-3">
                 What is San Salvador?
               </summary>
-              <span className="px-4 py-2 text-base">
+              <span className="text-base">
                 San Salvador is the capital of the country El Salvador, the Pie
                 & AI are events in every city in the world
               </span>
             </details>
             <details className="mb-4">
-              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4">
+              <summary className="font-semibold cursor-pointer bg-gray-200 rounded-md py-2 px-4 mb-3">
                 How can I give a talk?
               </summary>
-              <span className="px-4 py-2 text-base">
+              <span className="text-base">
                 You can send us an email{" "}
                 <a
                   href="mailto:pieaisv@gmail.com"
