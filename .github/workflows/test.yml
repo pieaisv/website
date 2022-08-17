@@ -21,16 +21,12 @@ jobs:
     needs: lint
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
       - name: Installing dependencies
         run: npm install
-      - name: Prisma migrations
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: ./node_modules/.bin/prisma migrate deploy
       - name: Bundle for production
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
