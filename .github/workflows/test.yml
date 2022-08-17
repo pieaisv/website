@@ -3,11 +3,30 @@ name: Tests
 on: [push, pull_request]
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+      - name: Installing dependencies
+        run: npm i
+      - name: Upload code
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-code
+          path: ${{ github.workspace }}
+      - name: Executing Linter
+        run: npm run lint
+
   e2e:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
