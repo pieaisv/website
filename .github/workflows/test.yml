@@ -15,10 +15,6 @@ jobs:
         uses: actions/setup-node@v3
       - name: Installing Dependencies
         run: npm install
-      - name: Prisma migrations
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: ./node_modules/.bin/prisma migrate deploy
       - name: Bundle for production
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
