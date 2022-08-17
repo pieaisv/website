@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prisma:deploy": "./node_modules/.bin/prisma migrate deploy",
+    "prisma:dev": "./node_modules/.bin/prisma migrate dev",
     "dev": "next dev",
     "build": "prisma:deploy && next build",
     "start": "next start",
     "lint": "next lint",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress:run",
-    "prisma:deploy": "./node_modules/.bin/prisma migrate deploy",
-    "prisma:dev": "./node_modules/.bin/prisma migrate dev"
+    "e2e": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "dependencies": {
     "@prisma/client": "^4.2.1",
