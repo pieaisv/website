@@ -3,30 +3,22 @@ name: Tests
 on: [push, pull_request]
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-      - name: Installing dependencies
-        run: npm i
-      - name: Executing Linter
-        run: npm run lint
-
   e2e:
     runs-on: ubuntu-latest
-    needs: lint
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-        with:
-          node-version: '18.x'
-      - name: Installing dependencies
+      - name: Installing Dependencies
         run: npm install
+      - name: Prisma migrations
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: ./node_modules/.bin/prisma migrate deploy
       - name: Bundle for production
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
