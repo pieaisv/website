@@ -5,44 +5,33 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
       - name: Installing dependencies
         run: npm i
-      - name: Upload code
-        uses: actions/upload-artifact@v3
-        with:
-          name: my-code
-          path: ${{ github.workspace }}
       - name: Executing Linter
         run: npm run lint
 
   e2e:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    needs: lint
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-      - name: Installing Dependencies
+        with:
+          node-version: '18.x'
+      - name: Installing dependencies
         run: npm install
       - name: Prisma migrations
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: ./node_modules/.bin/prisma migrate deploy
       - name: Bundle for production
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          GH_GIST_ID: ${{ secrets.GH_GIST_ID }}
-          GH_TOKEN_GIST: ${{ secrets.GH_TOKEN_GIST }}
         run: npm run build
       - name: Executing Cypress
         env:
