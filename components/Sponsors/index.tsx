@@ -12,9 +12,7 @@ function Sponsors() {
     <div className="text-center m-3">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div>
-          <div className="text-2xl md:text-4xl font-extrabold">
-            <span>Sponsors</span>
-          </div>
+          <h2 className="text-2xl md:text-4xl font-extrabold">Sponsors</h2>
           <br />
           <div className="text-xl md:text-2xl font-semibold">
             <span>Companies that trust the AI community in El Salvador</span>

@@ -9,12 +9,12 @@ function Presentation(): JSX.Element {
         <br />
         <br />
         <div className="text-center">
-          <div className="text-2xl md:text-4xl font-extrabold">
-            <span>Pie & AI: San Salvador</span>
-          </div>
+          <h1 id="title" className="text-2xl md:text-4xl font-extrabold">
+            Pie & AI: San Salvador
+          </h1>
           <br />
           <div className="max-w-screen-md m-auto">
-            <p className="text-base">
+            <p id="description" className="text-base">
               AI meetings hosted independently by{" "}
               <a
                 href="https://www.deeplearning.ai/"

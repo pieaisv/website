@@ -4,17 +4,15 @@ function Ambassadors(): JSX.Element {
   return (
     <>
       <div className="text-center">
-        <div className="text-2xl md:text-4xl font-extrabold">
-          <span>
-            <a
-              href="https://www.deeplearning.ai/"
-              className="text-indigo-700 underline cursor-pointer"
-            >
-              DeepLearning.AI
-            </a>{" "}
-            Event Ambassadors
-          </span>
-        </div>
+        <h2 className="text-2xl md:text-4xl font-extrabold">
+          <a
+            href="https://www.deeplearning.ai/"
+            className="text-indigo-700 underline cursor-pointer"
+          >
+            DeepLearning.AI
+          </a>{" "}
+          Event Ambassadors
+        </h2>
         <br />
         <div className="max-w-screen-md m-auto">
           <p className="text-base">

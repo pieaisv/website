@@ -22,9 +22,9 @@ function Newsletter() {
         <div className="module">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
-              <p className="text-3xl font-semibold mb-2">
+              <h2 className="text-3xl font-semibold mb-2">
                 Suscribe to Newsletter
-              </p>
+              </h2>
               <p className="text-base">
                 A newsletter to inform you about events and new updates from Pie
                 & AI San Salvador.
