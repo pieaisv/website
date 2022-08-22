@@ -13,8 +13,7 @@ function Ambassadors(): JSX.Element {
           </a>{" "}
           Event Ambassadors
         </h2>
-        <br />
-        <div className="max-w-screen-md m-auto">
+        <div className="max-w-screen-md m-auto mt-3">
           <p className="text-base">
             Speakers who are passionate about technology and are from another
             galaxy.

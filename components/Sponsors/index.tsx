@@ -17,8 +17,7 @@ function Sponsors() {
           <div className="text-xl md:text-2xl font-semibold">
             <span>Companies that trust the AI community in El Salvador</span>
           </div>
-          <br />
-          <div className="max-w-screen-md m-auto">
+          <div className="max-w-screen-md mt-3">
             <p className="text-base">
               Thank you for your support, without you it would not be possible.
               In addition we can reach more people, make raffles and improve the
