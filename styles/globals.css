@@ -105,3 +105,20 @@ body::-webkit-scrollbar-thumb {
 .to-pie-500 {
   --tw-gradient-to: #ffb100;
 }
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation: flash 2s ease-in-out infinite both;
+}
