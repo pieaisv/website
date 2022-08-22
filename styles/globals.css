@@ -83,6 +83,12 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: 60% 40%;
 }
 
+.module-newsletter {
+  height: 100%;
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   .grid-newsletter {
     display: grid;
