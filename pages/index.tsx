@@ -38,12 +38,9 @@ const Home: NextPage = (props) => {
       <br />
       <br />
       <br />
-      <UpcomingEvents />
-      <br />
-      <br />
-      <br />
-      <br />
       <Sponsors />
+      <br />
+      <UpcomingEvents />
       <br />
       <br />
       <br />

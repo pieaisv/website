@@ -10,15 +10,15 @@ function Sponsors() {
   ];
   return (
     <div className="text-center m-3">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
         <div>
-          <h2 className="text-2xl md:text-4xl font-extrabold">Sponsors</h2>
+          <h2 className="text-2xl md:text-5xl font-extrabold">Sponsors</h2>
           <br />
-          <div className="text-xl md:text-2xl font-semibold">
+          <div className="text-xl font-semibold">
             <span>Companies that trust the AI community in El Salvador</span>
           </div>
-          <div className="max-w-screen-md mt-3">
-            <p className="text-base">
+          <div className="text-center mt-3">
+            <p className="text-xl">
               Thank you for your support, without you it would not be possible.
               In addition we can reach more people, make raffles and improve the
               quality of the events.
@@ -29,7 +29,7 @@ function Sponsors() {
               <a
                 target={"_blank"}
                 href="mailto:pieaisv@gmail.com?subject=Event%20Sponsorship&amp;body=Hello 👋, I want to sponsor a event."
-                className="bg-white bg-pie text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out"
+                className="bg-white hover:bg-black text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out"
                 rel="noreferrer"
               >
                 <span className="ml-1">I want to sponsor the event!</span>
