@@ -19,6 +19,7 @@ function Ambassadors(): JSX.Element {
             galaxy.
           </p>
         </div>
+        <br />
       </div>
       <div className="flex justify-center mt-2 m-3">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

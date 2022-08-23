@@ -72,18 +72,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .module-border-wrap {
-  width: auto;
+  max-width: 370px;
   position: relative;
   background: linear-gradient(to right, #feb200, #f12064);
   padding: 4px;
-}
-@media (min-width: 768px) {
-  .module-border-wrap {
-    width: 370px;
-    position: relative;
-    background: linear-gradient(to right, #feb200, #f12064);
-    padding: 4px;
-  }
 }
 
 .module-border-wrap-newsletter {
