@@ -29,6 +29,6 @@ jobs:
       - name: Installing dependencies
         run: npm install
       - name: Bundle for production
-        run: npm run build:ci
+        run: npm run build
       - name: Executing Cypress
         run: npm run e2e
