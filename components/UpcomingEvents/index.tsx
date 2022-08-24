@@ -42,10 +42,11 @@ function UpcomingEvents() {
 
   return (
     <>
+      <br />
+      <br />
       <div className="h-auto md:bg-pie-no-hover">
         <br />
-        <br />
-        <div className="m-3 mt-2 md:mt-4">
+        <div className="m-3 mt-2 md:mt-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
             <div>
               <div className="text-3xl md:text-5xl font-bold text-center">
@@ -322,6 +323,7 @@ function UpcomingEvents() {
             </div>
           </div>
         </div>
+        <br />
         <br />
       </div>
     </>

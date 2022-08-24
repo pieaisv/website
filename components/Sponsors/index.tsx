@@ -9,53 +9,61 @@ function Sponsors() {
     },
   ];
   return (
-    <div className="text-center m-3">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
-        <div>
-          <h2 className="text-2xl md:text-5xl font-extrabold">Sponsors</h2>
-          <br />
-          <div className="text-xl font-semibold">
-            <span>Companies that trust the AI community in El Salvador</span>
-          </div>
-          <div className="text-center mt-3">
-            <p className="text-xl">
-              Thank you for your support, without you it would not be possible.
-              In addition we can reach more people, make raffles and improve the
-              quality of the events.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <div className="text-base text-center md:text-left">
-              <a
-                target={"_blank"}
-                href="mailto:pieaisv@gmail.com?subject=Event%20Sponsorship&amp;body=Hello 👋, I want to sponsor a event."
-                className="bg-white hover:bg-black text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out"
-                rel="noreferrer"
-              >
-                <span className="ml-1">I want to sponsor the event!</span>
-              </a>
+    <>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="m-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
+          <div>
+            <h2 className="text-2xl md:text-5xl font-extrabold text-center">Sponsors</h2>
+            <br />
+            <div className=" mt-3">
+              <p className="text-xl max-w-3xl">
+                Thank you for your support, without you it would not be
+                possible. In addition we can reach more people, make raffles and
+                improve the quality of the events.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="text-base text-center md:text-left">
+                <a
+                  target={"_blank"}
+                  href="mailto:pieaisv@gmail.com?subject=Event%20Sponsorship&amp;body=Hello 👋, I want to sponsor a event."
+                  className="bg-white hover:bg-black text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out"
+                  rel="noreferrer"
+                >
+                  <span className="ml-1">I want to sponsor the event!</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-3 mt-8 md:mt-0">
-          {sponsorsBrands.map((brand) => {
-            return (
-              <a
-                key={brand.name}
-                href={brand.website}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <div
-                  title={brand.name}
-                  dangerouslySetInnerHTML={{ __html: brand.logo }}
-                />
-              </a>
-            );
-          })}
+          <div className="grid grid-cols-3 mt-8 md:mt-0">
+            {sponsorsBrands.map((brand) => {
+              return (
+                <a
+                  key={brand.name}
+                  href={brand.website}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <div
+                    title={brand.name}
+                    dangerouslySetInnerHTML={{ __html: brand.logo }}
+                  />
+                </a>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+      <br />
+      <br />
+      <br />
+    </>
   );
 }
 

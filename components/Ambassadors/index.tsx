@@ -3,6 +3,10 @@ import { ambassadorsProfiles } from "./ambassadorsProfiles";
 function Ambassadors(): JSX.Element {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="text-center">
         <h2 className="text-3xl md:text-5xl font-extrabold">
           <a
