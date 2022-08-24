@@ -24,7 +24,7 @@ export const ambassadorsProfiles = [
       github_url: "https://github.com/napo178",
       twitter_url: "https://twitter.com/napoperez1998",
       linkedin_url: "https://www.linkedin.com/in/napole%C3%B3n-alcides-p-194375114/",
-      image: "/napoleon.jpg ",
+      image: "/napoleon.jpg",
     },
     {
       name: "Giancarlo Pablo",
