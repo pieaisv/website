@@ -3,8 +3,12 @@ import { ambassadorsProfiles } from "./ambassadorsProfiles";
 function Ambassadors(): JSX.Element {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="text-center">
-        <h2 className="text-2xl md:text-4xl font-extrabold">
+        <h2 className="text-3xl md:text-5xl font-extrabold">
           <a
             href="https://www.deeplearning.ai/"
             className="text-indigo-700 underline cursor-pointer"
@@ -13,20 +17,20 @@ function Ambassadors(): JSX.Element {
           </a>{" "}
           Event Ambassadors
         </h2>
-        <br />
-        <div className="max-w-screen-md m-auto">
-          <p className="text-base">
+        <div className="max-w-screen-md m-auto mt-3">
+          <p className="text-xl">
             Speakers who are passionate about technology and are from another
             galaxy.
           </p>
         </div>
+        <br />
       </div>
-      <div className="flex justify-center mt-2">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 m-3">
+      <div className="flex justify-center mt-2 m-3">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {ambassadorsProfiles.map((ambassador) => {
             return (
               <div className="module-border-wrap" key={ambassador.name}>
-                <div className=" module">
+                <div className="module">
                   <div className="text-center">
                     <picture>
                       <Image
@@ -39,10 +43,10 @@ function Ambassadors(): JSX.Element {
                       />
                     </picture>
                   </div>
-                  <div className="text-center">
+                  <div className="text-center text-xl">
                     <strong>{ambassador.name}</strong>
                     <p
-                      className="text-base"
+                      className="text-xl"
                       dangerouslySetInnerHTML={{
                         __html: ambassador.description,
                       }}

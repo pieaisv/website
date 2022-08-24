@@ -4,8 +4,9 @@ import Ambassadors from "../components/Ambassadors";
 import Faq from "../components/Faq";
 import Newsletter from "../components/Newsletter";
 import Presentation from "../components/Presentation";
+import ShareMeet from "../components/ShareMeet";
 import Sponsors from "../components/Sponsors";
-import UpcomingEvents from "../components/UpcomingEvents";
+//import UpcomingEvents from "../components/UpcomingEvents";
 
 const Home: NextPage = (props) => {
   // @ts-ignore
@@ -34,26 +35,12 @@ const Home: NextPage = (props) => {
         <meta property="twitter:description" content={description} />
       </Head>
       <Presentation />
-      <br />
-      <br />
-      <br />
-      <br />
-      <UpcomingEvents />
-      <br />
-      <br />
-      <br />
-      <br />
       <Sponsors />
-      <br />
-      <br />
-      <br />
-      <br />
+      <ShareMeet />
+      {/* <UpcomingEvents /> */}
       <Ambassadors />
       <Faq />
-      <br />
       <Newsletter />
-      <br />
-      <br />
     </>
   );
 };

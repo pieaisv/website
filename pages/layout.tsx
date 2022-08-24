@@ -9,7 +9,7 @@ export default function Layout({ children }: Props) {
     <>
       <Navbar />
       <main>{children}</main>
-      <footer className="text-base text-center">
+      <footer className="text-base text-center mt-10">
         Created with 🤎 by Pie & AI San Salvador.
       </footer>
       <br />

@@ -19,6 +19,12 @@ body {
   background: #ffb100;
 }
 
+@media (min-width: 768px) {
+  .md\:bg-pie-no-hover {
+    background-color: #ffb100;
+  }
+}
+
 .logo-float {
   animation: float 4s ease-in-out infinite both;
 }
@@ -50,7 +56,7 @@ body::-webkit-scrollbar {
 }
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #fdb200;
+  background: #000000;
 }
 
 @media (max-width: 640px) {
@@ -66,6 +72,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .module-border-wrap {
+  max-width: 370px;
+  position: relative;
+  background: linear-gradient(to right, #feb200, #f12064);
+  padding: 4px;
+}
+
+.module-border-wrap-newsletter {
   width: auto;
   position: relative;
   background: linear-gradient(to right, #feb200, #f12064);
@@ -106,6 +119,7 @@ body::-webkit-scrollbar-thumb {
   --tw-gradient-to: #ffb100;
 }
 
+<<<<<<< HEAD
 @keyframes flash {
   from,
   50%,
@@ -122,3 +136,11 @@ body::-webkit-scrollbar-thumb {
 .flash {
   animation: flash 2s ease-in-out infinite both;
 }
+=======
+.module-border-wrap-event {
+  width: 370px;
+  position: relative;
+  background: black;
+  padding: 4px;
+}
+>>>>>>> dev
