@@ -26,13 +26,13 @@ const PageNotFound: NextPage = () => {
       </Head>
       <div className="grid h-screen place-content-center m-3 md:m-0">
         <div className="text-center">
-          <h1 id="title" className="text-6xl font-extrabold">
+          <h1 id="title" className="text-5xl font-extrabold">
             404
           </h1>
         </div>
         <br />
         <div className="text-center">
-          <h1 id="title" className="text-xl md:text-4xl font-medium">
+          <h1 id="title" className="text-xl font-medium">
             Page Not Found
           </h1>
         </div>
@@ -41,7 +41,7 @@ const PageNotFound: NextPage = () => {
 
         <div className="flex justify-center items-center">
           <svg
-            height="350"
+            className="h-44 md:h-52"
             viewBox="0 0 792 432"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ const PageNotFound: NextPage = () => {
         <div className="flex justify-center items-center">
           <Link href="/" className="text-base text-center md:text-left">
             <a>
-              <div className="bg-white bg-pie cursor-pointer text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out">
+              <div className="bg-white hover:bg-black cursor-pointer text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out">
                 <span className="ml-1">Go to Home</span>
               </div>
             </a>
