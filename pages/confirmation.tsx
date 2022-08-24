@@ -16,7 +16,7 @@ function Confirmation() {
         <div className="text-base text-center md:text-left">
           <Link href="/" rel="noreferrer">
             <a>
-              <div className="bg-white bg-pie cursor-pointer text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out">
+              <div className="bg-white hover:bg-black cursor-pointer text-xl text-black hover:text-white py-2 mt-6 px-4 border-l-2 border-t-2 border-r-4 border-b-4 border-black rounded inline-flex items-center ease-in-out">
                 <span className="ml-1">Go to Home</span>
               </div>
             </a>
