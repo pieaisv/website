@@ -107,6 +107,11 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 70% 30%;
   }
+  .module-newsletter {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    padding: 3rem;
+  }
 }
 
 .from-redpie-500 {

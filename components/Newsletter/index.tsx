@@ -21,7 +21,7 @@ function Newsletter() {
       <br />
       <div className="m-3 md:m-auto max-w-screen-xl">
         <div className="module-border-wrap-newsletter">
-          <div className="module">
+          <div className="module-newsletter">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div>
                 <h2 className="text-3xl font-semibold mb-2">
@@ -46,7 +46,7 @@ function Newsletter() {
                       onChange={({ target }) =>
                         setEmail({
                           email: target.value,
-                        })
+                        }) 
                       }
                     />
                   </div>
