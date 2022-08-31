@@ -24,14 +24,14 @@ function Faq() {
                 Pie & AI is a series from{" "}
                 <a
                   href="https://www.deeplearning.ai/ambassador/"
-                  className="text-indigo-700 underline cursor-pointer"
+                  className="text-indigo-700 hover:underline cursor-pointer"
                 >
                   DeepLearning.AI
                 </a>
                 . AI meetings hosted independently by the{" "}
                 <a
                   href="https://www.deeplearning.ai/events/"
-                  className="text-indigo-700 underline cursor-pointer"
+                  className="text-indigo-700 hover:underline cursor-pointer"
                 >
                   global AI community
                 </a>
@@ -50,7 +50,7 @@ function Faq() {
                 events, click here to{" "}
                 <a
                   href="https://www.deeplearning.ai/ambassador/"
-                  className="text-indigo-700 underline cursor-pointer"
+                  className="text-indigo-700 hover:underline cursor-pointer"
                 >
                   apply now
                 </a>
@@ -75,7 +75,7 @@ function Faq() {
                 You can send us an email{" "}
                 <a
                   href="mailto:pieaisv@gmail.com"
-                  className="text-indigo-700 underline cursor-pointer"
+                  className="text-indigo-700 hover:underline cursor-pointer"
                 >
                   pieaisv@gmail.com{" "}
                 </a>{" "}

@@ -25,7 +25,7 @@ function ShareMeet() {
                 <p className="mb-4 text-xl max-w-3xl">
                   You can share a photo of an event you attend by tagging{" "}
                   <a
-                    className="text-indigo-700 underline cursor-pointer"
+                    className="text-indigo-700 hover:underline cursor-pointer"
                     href="https://twitter.com/pieaisv"
                     target={"_blank"}
                     rel="noreferrer"
@@ -34,7 +34,7 @@ function ShareMeet() {
                   </a>{" "}
                   on Twitter or using the hashtag{" "}
                   <a
-                    className="text-indigo-700 underline cursor-pointer"
+                    className="text-indigo-700 hover:underline cursor-pointer"
                     href="https://twitter.com/search?q=%23pieaisv"
                     target={"_blank"}
                     rel="noreferrer"

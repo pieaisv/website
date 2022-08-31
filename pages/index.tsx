@@ -8,9 +8,12 @@ import ShareMeet from "../components/ShareMeet";
 import Sponsors from "../components/Sponsors";
 //import UpcomingEvents from "../components/UpcomingEvents";
 
-const Home: NextPage = (props) => {
+const Home: NextPage = () => {
   // @ts-ignore
-  const DOMAIN = props?.host;
+  const DOMAIN =
+    process.env.NODE_ENV === "production"
+      ? "https://www.pieaisv.com"
+      : "http://localhost:3000";
 
   const title = "Pie & AI: San Salvador";
   const description =
@@ -44,18 +47,4 @@ const Home: NextPage = (props) => {
     </>
   );
 };
-
-export async function getServerSideProps({ req }: NextPageContext) {
-  if (req) {
-    const { NODE_ENV } = process.env;
-    const host =
-      NODE_ENV === "production"
-        ? "https://" + req.headers.host
-        : "http://" + req.headers.host;
-
-    return {
-      props: { host },
-    };
-  }
-}
 export default Home;
