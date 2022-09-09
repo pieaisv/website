@@ -17,7 +17,7 @@ function Presentation(): JSX.Element {
                   AI meetings hosted independently by{" "}
                   <a
                     href="https://www.deeplearning.ai/"
-                    className="text-indigo-700 underline cursor-pointer"
+                    className="text-indigo-700 hover:underline cursor-pointer"
                   >
                     DeepLearning.AI
                   </a>{" "}

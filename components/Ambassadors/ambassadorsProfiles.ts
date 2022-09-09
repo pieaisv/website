@@ -2,7 +2,7 @@ export const ambassadorsProfiles = [
     {
       name: "David Quintanilla",
       username_twitter: "@dave_quinta",
-      description: `AI Developer | <a class="text-indigo-700 underline cursor-pointer" href="https://twitter.com/auth0">@auth0 Ambassador</a>`,
+      description: `AI Developer | <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@auth0 Ambassador</a>`,
       github_url: "https://github.com/davequinta",
       twitter_url: "https://twitter.com/dave_quinta",
       linkedin_url: "https://www.linkedin.com/in/david-quinta/",
@@ -20,7 +20,7 @@ export const ambassadorsProfiles = [
     {
       name: "Napoleón Pérez",
       username_twitter: "@napoperez1998",
-      description: `ML Engineer | Researcher  <a class="text-indigo-700 underline cursor-pointer" href="https://twitter.com/ieeetems">@ieeetems</a> `,
+      description: `ML Engineer | Researcher  <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/ieeetems" target="_blank">@ieeetems</a> `,
       github_url: "https://github.com/napo178",
       twitter_url: "https://twitter.com/napoperez1998",
       linkedin_url: "https://www.linkedin.com/in/napole%C3%B3n-alcides-p-194375114/",
@@ -29,7 +29,7 @@ export const ambassadorsProfiles = [
     {
       name: "Giancarlo Pablo",
       username_twitter: "@gpablo06",
-      description: `Blockchain & BE Dev | MLE <a class="text-indigo-700 underline cursor-pointer" href="https://twitter.com/auth0">@OmdenaAI</a>`,
+      description: `Blockchain & BE Dev | MLE <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@OmdenaAI</a>`,
       github_url: "https://github.com/gpablo6",
       twitter_url: "https://twitter.com/gpablo06",
       linkedin_url: "https://www.linkedin.com/in/gpablo6/",

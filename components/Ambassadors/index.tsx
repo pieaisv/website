@@ -11,7 +11,7 @@ function Ambassadors(): JSX.Element {
         <h2 className="text-3xl md:text-5xl font-extrabold">
           <a
             href="https://www.deeplearning.ai/"
-            className="text-indigo-700 underline cursor-pointer"
+            className="text-indigo-700 hover:underline cursor-pointer"
           >
             DeepLearning.AI
           </a>{" "}
