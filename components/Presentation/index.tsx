@@ -6,7 +6,7 @@ function Presentation(): JSX.Element {
     <>
       <main className="m-3">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="mt-60">
+          <div className="mt-10 md:mt-60">
             <div className="text-center">
               <h1 id="title" className="text-3xl md:text-6xl font-extrabold">
                 Pie & AI: San Salvador
