@@ -3,7 +3,7 @@ import Newsletter from "../components/Newsletter";
 
 function About() {
   return (
-    <div>
+    <div className="m-3">
       <br />
       <br />
       <br />
