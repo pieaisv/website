@@ -16,13 +16,15 @@ function Sponsors() {
       <br />
       <br />
       <br />
-      <div className="m-3">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-40">
+      <div className="h-auto m-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 m-3">
           <div>
-            <h2 className="text-2xl md:text-5xl font-extrabold text-center">Sponsors</h2>
+            <h2 className="text-2xl md:text-5xl font-extrabold text-center">
+              Sponsors
+            </h2>
             <br />
-            <div className=" mt-3">
-              <p className="text-xl max-w-3xl">
+            <div className="mt-3">
+              <p className="text-xl text-center max-w-4xl">
                 Thank you for your support, without you it would not be
                 possible. In addition we can reach more people, make raffles and
                 improve the quality of the events.
