@@ -1,4 +1,4 @@
-import type { NextPage, NextPageContext } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 import Ambassadors from "../components/Ambassadors";
 import Faq from "../components/Faq";
@@ -6,7 +6,6 @@ import Newsletter from "../components/Newsletter";
 import Presentation from "../components/Presentation";
 import ShareMeet from "../components/ShareMeet";
 import Sponsors from "../components/Sponsors";
-//import UpcomingEvents from "../components/UpcomingEvents";
 
 const Home: NextPage = () => {
   // @ts-ignore
@@ -40,7 +39,6 @@ const Home: NextPage = () => {
       <Presentation />
       <Sponsors />
       <ShareMeet />
-      {/* <UpcomingEvents /> */}
       <Ambassadors />
       <Faq />
       <Newsletter />
