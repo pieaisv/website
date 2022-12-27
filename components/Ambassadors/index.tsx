@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { ambassadorsProfiles } from "./ambassadorsProfiles";
+import Link from "next/link";
 function Ambassadors(): JSX.Element {
   return (
     <>
@@ -32,14 +32,14 @@ function Ambassadors(): JSX.Element {
               <div className="module-border-wrap" key={ambassador.name}>
                 <div className="module">
                   <div className="text-center">
-                    <picture>
-                      <Image
+                    <picture className="flex justify-center items-center">
+                      <img
                         className="rounded-full"
                         title={`${ambassador.name} | ${ambassador.username_twitter}`}
                         alt={`${ambassador.name} | ${ambassador.username_twitter}`}
                         src={ambassador.image}
-                        height={200}
-                        width={200}
+                        height="200px"
+                        width="200px"
                       />
                     </picture>
                   </div>
@@ -55,7 +55,7 @@ function Ambassadors(): JSX.Element {
                   <br />
                   <div className="flex justify-center gap-2">
                     <figure>
-                      <a
+                      <Link
                         target={"_blank"}
                         href={ambassador.github_url}
                         rel="noreferrer"
@@ -78,10 +78,10 @@ function Ambassadors(): JSX.Element {
                             />
                           </g>
                         </svg>
-                      </a>
+                      </Link>
                     </figure>
                     <figure>
-                      <a
+                      <Link
                         target={"_blank"}
                         href={ambassador.twitter_url}
                         rel="noreferrer"
@@ -104,11 +104,11 @@ function Ambassadors(): JSX.Element {
                             />
                           </g>
                         </svg>
-                      </a>
+                      </Link>
                     </figure>
 
                     <figure>
-                      <a
+                      <Link
                         target={"_blank"}
                         href={ambassador.linkedin_url}
                         rel="noreferrer"
@@ -131,7 +131,7 @@ function Ambassadors(): JSX.Element {
                             />
                           </g>
                         </svg>
-                      </a>
+                      </Link>
                     </figure>
                   </div>
                 </div>
