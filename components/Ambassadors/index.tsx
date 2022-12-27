@@ -38,8 +38,8 @@ function Ambassadors(): JSX.Element {
                         title={`${ambassador.name} | ${ambassador.username_twitter}`}
                         alt={`${ambassador.name} | ${ambassador.username_twitter}`}
                         src={ambassador.image}
-                        height="200px"
-                        width="200px"
+                        height={200}
+                        width={200}
                       />
                     </picture>
                   </div>
