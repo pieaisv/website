@@ -1,5 +1,6 @@
 import { ambassadorsProfiles } from "./ambassadorsProfiles";
 import Link from "next/link";
+import Image from "next/image";
 function Ambassadors(): JSX.Element {
   return (
     <>
@@ -32,14 +33,14 @@ function Ambassadors(): JSX.Element {
               <div className="module-border-wrap" key={ambassador.name}>
                 <div className="module">
                   <div className="text-center">
-                    <picture className="flex justify-center items-center">
-                      <img
+                    <picture className="flex justify-center items-center mb-5">
+                      <Image
                         className="rounded-full"
                         title={`${ambassador.name} | ${ambassador.username_twitter}`}
                         alt={`${ambassador.name} | ${ambassador.username_twitter}`}
                         src={ambassador.image}
-                        height="200px"
-                        width="200px"
+                        height={200}
+                        width={200}
                       />
                     </picture>
                   </div>

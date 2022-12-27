@@ -9,22 +9,13 @@ export const ambassadorsProfiles = [
       image: "/david.jpg",
     },
     {
-      name: "Nelson Hernández",
-      username_twitter: "@nelsoncode_dev",
-      description: "Frontend Developer | Content Creator",
-      github_url: "https://github.com/nelsondev19",
-      twitter_url: "https://twitter.com/nelsoncode_dev",
-      linkedin_url: "https://www.linkedin.com/in/nelsoncode/",
-      image: "/nelson.jpg",
-    },
-    {
       name: "Napoleón Pérez",
       username_twitter: "@napoperez1998",
       description: `ML Engineer | Researcher  <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/ieeetems" target="_blank">@ieeetems</a> `,
       github_url: "https://github.com/napo178",
       twitter_url: "https://twitter.com/napoperez1998",
       linkedin_url: "https://www.linkedin.com/in/napole%C3%B3n-alcides-p-194375114/",
-      image: "/napoleon.jpg",
+      image: "/napoleon.jpeg",
     },
     {
       name: "Giancarlo Pablo",
@@ -34,5 +25,14 @@ export const ambassadorsProfiles = [
       twitter_url: "https://twitter.com/gpablo06",
       linkedin_url: "https://www.linkedin.com/in/gpablo6/",
       image: "/pablo.png",
+    },
+    {
+      name: "Nelson Hernández",
+      username_twitter: "@nelsoncode_dev",
+      description: "Frontend Developer | Content Creator",
+      github_url: "https://github.com/nelsondev19",
+      twitter_url: "https://twitter.com/nelsoncode_dev",
+      linkedin_url: "https://www.linkedin.com/in/nelsoncode/",
+      image: "/nelson.jpg",
     },
   ];
