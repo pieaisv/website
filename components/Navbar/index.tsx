@@ -10,14 +10,14 @@ function Navbar() {
             <Link href="/">Pie & AI: San Salvador</Link>
           </div>
           <div className="grid nav-grid-column">
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center hover:underline">
               <Link href="/">
-                <a className="hover:underline">Home</a>
+                Home
               </Link>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center hover:underline">
               <Link href="/about">
-                <a className="hover:underline">About</a>
+                About
               </Link>
             </div>
           </div>
