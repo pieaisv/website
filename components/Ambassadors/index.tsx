@@ -37,7 +37,7 @@ function Ambassadors(): JSX.Element {
                       <Image
                         className="rounded-full"
                         title={`${ambassador.name} | ${ambassador.username_twitter}`}
-                        alt={`${ambassador.name} | ${ambassador.username_twitter}`}
+                        alt={`${ambassador.name} is a Pie & AI Event Ambassador for DeepLearning.AI and represents Pie & AI: San Salvador`}
                         src={ambassador.image}
                         height={200}
                         width={200}
