@@ -6,7 +6,6 @@ import Newsletter from "../components/Newsletter";
 import Presentation from "../components/Presentation";
 import ShareMeet from "../components/ShareMeet";
 import Sponsors from "../components/Sponsors";
-import Script from "next/script";
 
 const Home: NextPage = () => {
   // @ts-ignore
