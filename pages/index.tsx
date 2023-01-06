@@ -53,6 +53,7 @@ const Home: NextPage = () => {
         <meta name="twitter:creator" content="@pieaisv" />
         <meta name="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
+        <meta name="keywords" content="Pie & AI: San Salvador, Inteligencia Articifial, El Salvador, DeepLearning.AI, Pie & AI Event Ambassador" />
 
         <script
           type="application/ld+json"
