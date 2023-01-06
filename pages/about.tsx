@@ -5,7 +5,7 @@ function About() {
   // @ts-ignore
   const DOMAIN =
     process.env.NODE_ENV === "production"
-      ? "https://www.pieaisv.com"
+      ? "https://www.pieaisv.com/about"
       : "http://localhost:3000";
   const title = "About | Pie & AI: San Salvador";
   const description =
