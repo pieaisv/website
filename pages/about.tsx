@@ -2,7 +2,6 @@ import Head from "next/head";
 import Newsletter from "../components/Newsletter";
 
 function About() {
-  // @ts-ignore
   const DOMAIN =
     process.env.NODE_ENV === "production"
       ? "https://www.pieaisv.com/about"
