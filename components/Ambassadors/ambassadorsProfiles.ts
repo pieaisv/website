@@ -29,7 +29,7 @@ export const ambassadorsProfiles = [
     {
       name: "Nelson Hernández",
       username_twitter: "@nelsoncode_dev",
-      description: "Frontend Developer | Content Creator",
+      description: `Frontend Developer at <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/@denolyrics" target="_blank">@denolyrics</a> | Content Creator`,
       github_url: "https://github.com/nelsondev19",
       twitter_url: "https://twitter.com/nelsoncode_dev",
       linkedin_url: "https://www.linkedin.com/in/nelsoncode/",
