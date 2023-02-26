@@ -2,7 +2,7 @@ export const ambassadorsProfiles = [
     {
       name: "David Quintanilla",
       username_twitter: "@dave_quinta",
-      description: `AI Developer | <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@auth0 Ambassador</a>`,
+      description: `Software Engineer | <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@auth0 Ambassador</a>`,
       github_url: "https://github.com/davequinta",
       twitter_url: "https://twitter.com/dave_quinta",
       linkedin_url: "https://www.linkedin.com/in/david-quinta/",
@@ -20,7 +20,7 @@ export const ambassadorsProfiles = [
     {
       name: "Giancarlo Pablo",
       username_twitter: "@gpablo06",
-      description: `Blockchain Dev <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/@API3Latam" target="_blank">@API3Latam</a>`,
+      description: `Blockchain Dev <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/@API3Latam" target="_blank">@API3Latam</a> & <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/EndersGate" target="_blank">@EndersGate</a>`,
       github_url: "https://github.com/gpablo6",
       twitter_url: "https://twitter.com/gpablo06",
       linkedin_url: "https://www.linkedin.com/in/gpablo6/",
@@ -29,7 +29,7 @@ export const ambassadorsProfiles = [
     {
       name: "Nelson Hernández",
       username_twitter: "@nelsoncode_dev",
-      description: `Frontend Developer at <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/@denolyrics" target="_blank">@denolyrics</a> | Content Creator`,
+      description: `Frontend Developer at <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/@denolyrics" target="_blank">@denolyrics</a>`,
       github_url: "https://github.com/nelsondev19",
       twitter_url: "https://twitter.com/nelsoncode_dev",
       linkedin_url: "https://www.linkedin.com/in/nelsoncode/",
