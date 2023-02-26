@@ -46,14 +46,16 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="/preview.png" />
+        <meta property="og:image" content="https://www.pieaisv.com/preview.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content={DOMAIN} />
         <meta name="twitter:creator" content="@pieaisv" />
         <meta name="twitter:title" content={title} />
+        <meta property="twitter:image" content="https://www.pieaisv.com/preview.png" />
         <meta property="twitter:description" content={description} />
         <meta name="keywords" content="Pie & AI: San Salvador, Inteligencia Articifial, El Salvador, DeepLearning.AI, Pie & AI Event Ambassador" />
-
+        <meta property="og:image:width" content="1920">
+        <meta property="og:image:height" content="1080">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(parseLdJson()) }}
