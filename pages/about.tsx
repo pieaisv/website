@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Newsletter from "../components/Newsletter";
 
 function About() {
   const DOMAIN =
@@ -49,7 +48,6 @@ function About() {
           </div>
           <br />
         </div>
-        <Newsletter />
       </div>
     </>
   );
