@@ -10,7 +10,13 @@ function Sponsors() {
   ];
   return (
     <>
-      <div className="h-auto m-3 mt-40">
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="h-auto m-3">
         <div className="grid grid-cols-1 md:grid-cols-2 m-3">
           <div>
             <h2 className="text-2xl md:text-5xl font-extrabold text-center">
