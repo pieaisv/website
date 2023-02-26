@@ -54,8 +54,8 @@ const Home: NextPage = () => {
         <meta property="twitter:image" content="https://www.pieaisv.com/preview.png" />
         <meta property="twitter:description" content={description} />
         <meta name="keywords" content="Pie & AI: San Salvador, Inteligencia Articifial, El Salvador, DeepLearning.AI, Pie & AI Event Ambassador" />
-        <meta property="og:image:width" content="1920">
-        <meta property="og:image:height" content="1080">
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(parseLdJson()) }}
