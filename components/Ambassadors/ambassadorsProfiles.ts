@@ -2,7 +2,7 @@ export const ambassadorsProfiles = [
     {
       name: "David Quintanilla",
       username_twitter: "@dave_quinta",
-      description: `Software Engineer | <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@auth0 Ambassador</a>`,
+      description: `Software Engineer | <a class="text-indigo-700 hover:underline cursor-pointer" href="https://twitter.com/auth0" target="_blank">@auth0</a> Ambassador`,
       github_url: "https://github.com/davequinta",
       twitter_url: "https://twitter.com/dave_quinta",
       linkedin_url: "https://www.linkedin.com/in/david-quinta/",
