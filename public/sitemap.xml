@@ -1,22 +1,11 @@
-<!-- public/sitemap.xml -->
-<xml version="1.0" encoding="UTF-8">
-	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-		<url>
-			<loc>
-				https://www.pieaisv.com/
-			</loc>
-			<lastmod>
-				2022-12-27
-			</lastmod>
-		</url>
-
-        <url>
-			<loc>
-				https://www.pieaisv.com/about
-			</loc>
-			<lastmod>
-				2022-12-27
-			</lastmod>
-		</url>
-	</urlset>
-</xml>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+       <loc>https://www.pieaisv.com/</loc>
+       <lastmod>2023-03-22T16:38:41.409Z</lastmod>
+   </url>
+   <url>
+       <loc>https://www.pieaisv.com/about/</loc>
+       <lastmod>2023-03-22T16:38:41.409Z</lastmod>
+   </url>
+</urlset>
