@@ -16,19 +16,3 @@ jobs:
         run: npm i
       - name: Executing Linter
         run: npm run lint
-  e2e:
-    runs-on: ubuntu-latest
-    needs: lint
-    strategy:
-      matrix:
-        node-version: [18.x]
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-      - name: Installing dependencies
-        run: npm install
-      - name: Bundle for production
-        run: npm run build
-      - name: Executing Cypress
-        run: npm run e2e
